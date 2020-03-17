@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.jumbotron{
+    font-size: 20px;
+   padding: 60px;
+   background-color: #34495e;
+   text-align: center;
+   color: white;
+}
+
+#content article{
+    margin-top:30px;
+}
+
+header {
+    display: inline;
+ }
+
+nav {
+    background-color: #2c3e50;
+    padding: 5px;
+    position: sticky;
+   top: 0;
+   overflow: auto;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+ }
+
+ main{
+     padding: 20px;
+     overflow: auto;
+ }
+
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+ }
+
+ #content{
+    width: 75%;
+    float: left;
+ }
+
+ #content h2{
+     color: #2c3e50;
+ }
+
+ #home img{
+     max-width: 50%;
+ }
+
+#statuswrapper {
+    text-align: center;
+	padding: 5px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.statusicon{
+     max-width: 30%;
+ }
+
+ .icontitle{
+     color: #c0392b;
+     font-size: 20px;
+     font-weight: 700;
+     margin-bottom: 15px;
+     text-transform: uppercase;
+ }
+
+ .count{
+     margin-top: 10px;
+     color:#2c3e50;
+     font-size: 20px;
+     font-weight: 700;
+ }
+
+ .labelgejala{
+     font-size:25px;
+ }
+
+ .imgcol{
+     text-align: right;
+     width: 25%;
+ }
+
+.imggejala{
+     height: 12%;
+ }
+
+ #cegah{
+     display: flex;
+     flex-direction: row;
+ }
+
+ .pencegahanwrapper{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 5px;
+ }
+
+ .pencegahanicon{
+     width: 40%;
+ }
+
+ .infopencegahan{
+ text-align: center;    
+}
+
+ #hotlineimg{
+     width: 50%;
+ }
+
+ #kontak{
+     font-size:30px;
+     font-weight: 700;
+ }
+
+ aside{
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+ }
+
+ footer{
+     text-align: center;
+     font-weight: 700;
+     background-color: #34495e;
+     color: white;
+     height: 10%;
+     padding: 15px 0;
+     box-sizing: border-box;
+ }
+
+ #profile{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ #profile p{
+     text-align: center;
+     font-weight: 700;
+ }
+
+ #profile img{
+    width: 250px; 
+    max-height: 250px;
+ }
+
+ #profile table{
+     margin-top:10px;
+ }
+
+ #btnmobile{
+     display: none;
+ }
+
+ #btnicon{
+    display: none;
+ }
+
+
+@media screen and (max-width: 1000px){
+
+    .hide{
+        display: none;
+    }
+
+    .show{
+        display: block;
+    }
+
+    #btnmobile{
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #34495e;
+     width: 50px;
+     height: 50px;
+     padding: 5px;
+    }
+   
+    #btnicon{
+        display: block;
+       width: 30px;
+       height: 30px;
+    }
+
+    nav li {
+        display: block;
+        padding: 20px;
+    }
+
+    #home img{
+        max-width: 90%;
+    }
+
+    #statuswrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .statusicon{
+        max-width: 30%;
+    }
+
+    .labelgejala{
+        font-size:20px;
+    }
+   
+    .imgcol{
+        text-align: right;
+        width: 20%;
+    }
+   
+   .imggejala{
+        height: 10%;
+    }
+
+    #cegah{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hotlineimg{
+        width: 80%;
+    }
+
+    #content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
+}
